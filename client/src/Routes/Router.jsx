@@ -1,10 +1,10 @@
 import React from 'react';
 import { createBrowserRouter } from "react-router-dom";
-import UserLogin from '../pages/User/UserSignIn';
+import ProfessionalSignIn from '../pages/User/UserSignIn';
 import Home from '../pages/User/home';
 import PageNotFound from '../components/PageError';
 import About from '../pages/User/About';
-import SignUp from '../pages/User/UserSignUp';
+import ProfessionalSignUp from '../pages/User/UserSignUp';
 import Profile from '../pages/User/Profile';
 import PrivateRoute from '../components/PrivateRoute';
 import CreateListing from '../pages/User/Create-Listing';
@@ -16,7 +16,7 @@ import Contact from '../components/Contact'; // Add this import
 const Router = createBrowserRouter([
   {
     path: "/sign-in",
-    element: <UserLogin/>
+    element: <ProfessionalSignIn/> // Using the professional sign-in page
   },
   {
     path: "/",
@@ -27,16 +27,15 @@ const Router = createBrowserRouter([
     element: <About />
   },
   {
-    path: "/contact", // Add this route
+    path: "/contact",
     element: <Contact/>
-
   },
   {
     path: "/sign-up",
-    element: <SignUp />
+    element: <ProfessionalSignUp /> // Using the professional sign-up page
   },
-  { 
-    path:'/listing/:listingId',
+  {
+     path:'/listing/:listingId',
     element:<Listing />
   },
   {
