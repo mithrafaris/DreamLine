@@ -5,11 +5,7 @@ import toast, { Toaster } from 'react-hot-toast';
 import OAuth from '../../components/OAuth';
 
 // Logo component using your existing logo
-const Logo = () => (
-  <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl flex items-center justify-center mb-6">
-    <span className="text-white font-bold text-xl">DL</span>
-  </div>
-);
+
 
 // Password strength indicator
 const PasswordStrength = ({ password }) => {
@@ -142,7 +138,7 @@ function ProfessionalSignUp() {
         <div className="bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 p-8">
           {/* Logo and Title */}
           <div className="text-center mb-8">
-            <Logo />
+           
             <h1 className="text-3xl font-bold text-white mb-2">
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                 Dream
@@ -261,8 +257,7 @@ function ProfessionalSignUp() {
             <div className="flex-1 border-t border-white/20"></div>
           </div>
 
-          {/* OAuth Component */}
-          <OAuth />
+         
 
           {/* Sign In Link */}
           <div className="mt-8 text-center">

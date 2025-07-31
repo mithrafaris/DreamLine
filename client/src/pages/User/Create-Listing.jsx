@@ -179,6 +179,7 @@ console.log(formData);
   return (
     <div>
       <Header />
+      <div>
       <main className="p-3 max-w-4xl mx-auto">
         <h1 className="text-3xl font-semibold text-center my-7">Create a Listing</h1>
         <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
@@ -431,6 +432,7 @@ console.log(formData);
           </div>
         </form>
       </main>
+    </div>
     </div>
   );
 }
